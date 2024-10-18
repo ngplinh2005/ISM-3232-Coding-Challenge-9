@@ -35,6 +35,9 @@ class Section {
             console.log(`${book.getDetails()} - ${book._isAvailable ? "Available" : "Borrowed"}`)
         })
     }
+    calculateTotalBooksAvailable() {
+        return this.getAvailableBooks() 
+    } 
 }
 
 // Task 3: Create a Patron class
